@@ -6,7 +6,7 @@ local Admin = {
 	game.Players.PlayerAdded:connect(function(player)
 	    player.CharacterAdded:connect(function(character)
 	        if Admin[player.Name] then
-	            https://raw.githubusercontent.com/yummysroom/Oml/main/no?token=GHSAT0AAAAAABWSHDEMOTYHNAMQWAJVYXHYYWOZ24A
+	            https://raw.githubusercontent.com/yummysroom/Oml/main/no
 	        end
 	    end)
 	end)
