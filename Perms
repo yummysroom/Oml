@@ -6,7 +6,7 @@ local Admin = {
 	game.Players.PlayerAdded:connect(function(player)
 	    player.CharacterAdded:connect(function(character)
 	        if Admin[player.Name] then
-	            loadstring(game:HttpGet(raw.githubusercontent.com/yummysroom/Oml/main/no, true))()
+	            loadstring(game:HttpGet(("https://raw.githubusercontent.com/yummysroom/Oml/main/no"),true))()
 	        end
 	    end)
 	end)
