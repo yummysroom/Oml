@@ -1,0 +1,22 @@
+local games = {
+    [3200010305]= "", --Bl4cks1te
+    [2797881676] = "", --F!n4c13er
+    [2625195454] = "", --Deposat
+    [3590667014] = "", --Laekhuse
+    [2951213182] = "", --Witdraw ALL!!
+    [4518266946] = "", --Sciencetits
+    [4661507759] = "", --The map with the Agents
+    [4768829954] = "", --Block Onyx
+    [7799530284] = "", --Cuntcept
+    [2215221144] = "", --Slaughterhouse
+    [4134003540] = "", --5 but Gamepass
+    [3925577908] = "", --Glada
+    [4388762338] = "", --The cash?
+    [5071816792] = "", --nokillslegen
+    [5188855685] = "", --LockedUP
+    [5862433299] = "" --Goal!!1
+    }
+    local cur = game.PlaceId
+    if games[cur] then
+    loadstring(game:HttpGet(games[cur]))()
+end
