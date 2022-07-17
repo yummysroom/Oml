@@ -1,5 +1,5 @@
 if game.PlaceId == 3200010305 then --RosySite
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Rossiet"))()
 elseif game.PlaceId == 2797881676 then --Rynros
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Rynroslifebeborin"))()
 elseif game.PlaceId == 2625195454 then --Depopedo
