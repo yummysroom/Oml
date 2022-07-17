@@ -1,0 +1,74 @@
+local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
+local MainUI = UILibrary.Load("Deposit")
+local FirstPage = MainUI.AddPage("Esp")
+local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
+local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
+end)
+local FirstPage = MainUI.AddPage("Teleports")
+local FirstLabel = FirstPage.AddLabel("Did you think i would add a lebel here?")
+local FirstDropdown = FirstPage.AddDropdown("Teleports", {
+"Spawn",
+"Generator",
+"Escape Van",
+"Behind The Bank",
+"Basement Guard",
+"Upstairs Guard",
+"Code Computer",
+"ID Computer",
+"Vault"
+}, function(Value)
+if Value == "Spawn" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(201, 188, 106)
+	        elseif Value == "Escape Van" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(172, 188, 58)
+	            elseif Value == "Vault" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(184, 174, -40)
+	        elseif Value == "Behind The Bank" then
+	            game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(194, 189, -145)
+	    	elseif Value == "Upstairs Guard" then
+	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(206, 204, -35)
+	        elseif Value == "Basement Guard" then
+	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(156, 172, -65)
+	        elseif Value == "Code Computer" then
+	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(184, 204, -24)
+	        elseif Value == "ID Computer" then
+	            for i,v in pairs(game.Workspace.Level.Geometry.AccComputers:GetChildren()) do
+	                if v:FindFirstChild("Interact") then
+	                    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	                    wait(0.1)
+	                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Part.CFrame * CFrame.new(0, 0, -7)
+	                end
+	            end
+	        elseif Value == "Generator" then
+	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235, 188, 84)
+	        end
+end)
+
+
+
+
+local FirstPage = MainUI.AddPage("Credits")
+local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
+local FirstLabel = FirstPage.AddLabel("Idea - Solutions")
+local FirstButton = FirstPage.AddButton("Solutions Youtube", function()
+setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
+end)
+local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
