@@ -9,7 +9,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/L
 elseif game.PlaceId == 2951213182 then --withdrew from Misoon go back to life in apartment
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Withrynrosfrend"))()
 elseif game.PlaceId == 4518266946 then --Sciencetits
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/no"))()
 elseif game.PlaceId == 4661507759 then --Super Conscious Rat Suckers
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Socarsreallyslide"))()
 elseif game.PlaceId == 4768829954 then --Black Ducks
