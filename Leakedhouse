@@ -1,0 +1,95 @@
+local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
+local MainUI = UILibrary.Load("Lakehouse")
+local FirstPage = MainUI.AddPage("Esp")
+local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
+local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
+end)
+local FirstPage = MainUI.AddPage("Teleports")
+local FirstLabel = FirstPage.AddLabel("Lakehouse Fun")
+local FirstButton = FirstPage.AddButton("File Esp", function()
+for i,v in pairs(game.Workspace.Level.Geometry:GetDescendants()) do
+                    if v.Name == "FileFolder" then
+                        if v.Base then
+                            local BillboardGui = Instance.new('BillboardGui')
+    	                    local TextLabel = Instance.new('TextLabel')
+    	
+    	                    BillboardGui.Parent = v.Base
+    	                    BillboardGui.AlwaysOnTop = true
+    	                    BillboardGui.Size = UDim2.new(0, 50, 0, 50)
+                    	    BillboardGui.StudsOffset = Vector3.new(0,2,0)
+                    	    BillboardGui.Name = "niger"
+    	
+                    	    TextLabel.Parent = BillboardGui
+                    	    TextLabel.BackgroundColor3 = Color3.new(1,140,1)
+                    	    TextLabel.BackgroundTransparency = 1
+                    	    TextLabel.Size = UDim2.new(1, 0, 1, 0)
+                    	    TextLabel.Text = "File"
+                    	    TextLabel.TextColor3 = Color3.new(1, 140, 1)
+    	                    TextLabel.TextScaled = true
+                        end
+                    end
+end
+end)
+
+local FirstDropdown = FirstPage.AddDropdown("Teleports", {
+"Basement 1",
+"Basement 2",
+"Basement 3",
+"Cam Op",
+"Circuit Box Buggy",
+"SpeedBoat",
+"Inside"
+}, function(Value)
+ if Value == "Basement 1" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Level.Geometry.Basement1.Base.CFrame
+	        elseif Value == "Basement 2" then
+	            game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Level.Geometry.Basement2.Base.CFrame
+	    	elseif Value == "Basement 3" then
+	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Level.Geometry.Basement3.Base.CFrame
+	        elseif Value == "Cam Op" then
+	    	    for i,v in pairs(game.Workspace.Level.Geometry:GetDescendants()) do
+                    if v.Name == "SecurityComputer1" then
+                        if v.ImgScreen then
+                        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.ImgScreen.CFrame
+                        
+                        end
+                        
+                        
+                    end
+                    end
+	        elseif Value == "Inside" then
+	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(67.7, 19.5, -28)
+	        
+	        elseif Value == "SpeedBoat" then
+	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(50, -1.5, -215)
+	        elseif Value == "Circuit Box Buggy" then
+	            game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Level.Geometry.PowerBox.Case.Part.CFrame
+	        end
+end)
+
+
+
+
+local FirstPage = MainUI.AddPage("Credits")
+local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
+local FirstLabel = FirstPage.AddLabel("Idea - Solutions")
+local FirstButton = FirstPage.AddButton("Solutions Youtube", function()
+setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
+end)
+local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
