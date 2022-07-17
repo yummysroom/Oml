@@ -11,5 +11,5 @@ end
 if allowedPeople(LocalPlayer) == true then
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/yummysroom/Oml/main/Gems"),true))()
     else
-        print("join discord to use this script")
+        print("join discord to use this script --https://discord.gg/nWctUBtH--")
 end
