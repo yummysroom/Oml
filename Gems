@@ -1,23 +1,34 @@
-local games = {
-    [3200010305]= "", --Bl4cks1te
-    [2797881676] = "", --F!n4c13er
-    [2625195454] = "", --Deposat
-    [3590667014] = "", --Laekhuse
-    [2951213182] = "", --Witdraw ALL!!
-    [4518266946] = "", --Sciencetits
-    [4661507759] = "", --The map with the Agents
-    [4768829954] = "", --Block Onyx
-    [7799530284] = "https://raw.githubusercontent.com/yummysroom/Oml/main/GonCetc", --Cuntcept
-    [2215221144] = "", --Slaughterhouse
-    [4134003540] = "", --5 but Gamepass
-    [3925577908] = "", --Glada
-    [4388762338] = "", --The cash?
-    [5071816792] = "", --nokillslegen
-    [5188855685] = "", --LockedUP
-    [5862433299] = "" --Goal!!1
-    [740581508] = "", -lobby
-    }
-    local cur = game.PlaceId
-    if games[cur] then
-    loadstring(game:HttpGet(games[cur]))()
+if game.PlaceId == 3200010305 then --RosySite
+
+elseif game.PlaceId == 2797881676 then --Rynros
+
+elseif game.PlaceId == 2625195454 then --Depopedo
+
+elseif game.PlaceId == 3590667014 then --Heliman go BRRR
+
+elseif game.PlaceId == 2951213182 then --withdrew from Misoon go back to life in apartment
+
+elseif game.PlaceId == 4518266946 then --Sciencetits
+
+elseif game.PlaceId == 4661507759 then --Super Conscious Rat Suckers
+
+elseif game.PlaceId == 4768829954 then --Black Ducks
+
+elseif game.PlaceId == 7799530284 then --Consent
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/GonCetc"))()
+elseif game.PlaceId == 2215221144 then --Slaughterhouse
+
+elseif game.PlaceId == 4134003540 then --Auch
+
+elseif game.PlaceId == 3925577908 then --Glad to attend
+
+elseif game.PlaceId == 4388762338 then --No Cash?
+
+elseif game.PlaceId == 5071816792 then --slitup
+
+elseif game.PlaceId == 5188855685 then --plugup
+
+elseif game.PlaceId == 5862433299 then --Goall!1
+
+elseif game.PlaceId == 740581508 then --Lobby
 end
