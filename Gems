@@ -11,7 +11,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/W
 elseif game.PlaceId == 4518266946 then --Sciencetits
 
 elseif game.PlaceId == 4661507759 then --Super Conscious Rat Suckers
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Socarsreallyslide"))()
 elseif game.PlaceId == 4768829954 then --Black Ducks
 
 elseif game.PlaceId == 7799530284 then --Consent
@@ -20,7 +20,7 @@ elseif game.PlaceId == 2215221144 then --Slaughterhouse
 
 elseif game.PlaceId == 4134003540 then --Auch
 
-elseif game.PlaceId == 3925577908 then --Glad to attend
+elseif game.PlaceId == 3925577908 then --Glad to atten
 
 elseif game.PlaceId == 4388762338 then --No Cash?
 
