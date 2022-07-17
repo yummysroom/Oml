@@ -15,6 +15,7 @@ local games = {
     [5071816792] = "", --nokillslegen
     [5188855685] = "", --LockedUP
     [5862433299] = "" --Goal!!1
+    [740581508] = "", -lobby
     }
     local cur = game.PlaceId
     if games[cur] then
