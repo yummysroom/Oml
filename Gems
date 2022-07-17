@@ -3,7 +3,7 @@ if game.PlaceId == 3200010305 then --RosySite
 elseif game.PlaceId == 2797881676 then --Rynros
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Rynroslifebeborin"))()
 elseif game.PlaceId == 2625195454 then --Depopedo
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/depot"))()
 elseif game.PlaceId == 3590667014 then --Heliman go BRRR
 
 elseif game.PlaceId == 2951213182 then --withdrew from Misoon go back to life in apartment
