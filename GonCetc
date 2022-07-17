@@ -1,0 +1,55 @@
+local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
+local MainUI = UILibrary.Load("Concept")
+local FirstPage = MainUI.AddPage("Esp")
+local FirstLabel = FirstPage.AddLabel("Super nice Esp v")
+local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
+end)
+local FirstPage = MainUI.AddPage("Teleports")
+local FirstDropdown = FirstPage.AddDropdown("Teleports", {
+"Cam Op",
+"Basement Cam Op",
+"Manager Room",
+"Transformer",
+"Vault front",
+"Escape Van",
+"Conference Room"
+}, function(Value)
+if Value == "Cam Op" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-15, 33, -10.4)
+	        elseif Value == "Basement Cam Op" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(115.426, 7.5, 45.48)
+    	    elseif Value =="Manager Room" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(117.6, 35.5, -64.61)
+    	    elseif Value =="Transformer" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(197.18, 35.5, -2.62)
+    	    elseif Value =="Vault front" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(88.2, 3.5, -19.9)
+    	    elseif Value =="Escape Van" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(157.8, 20.4, -116.3)
+    	    elseif Value =="Conference Room" then
+    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8.4, 23.5, 57.36)
+    	    end
+end)
+local FirstPage = MainUI.AddPage("Credits")
+local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
+local FirstLabel = FirstPage.AddLabel("Idea - Solutions")
+local FirstButton = FirstPage.AddButton("Solutions Youtube", function()
+setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
+end)
+local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
