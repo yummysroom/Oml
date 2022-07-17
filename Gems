@@ -7,7 +7,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/d
 elseif game.PlaceId == 3590667014 then --Heliman go BRRR
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Leakedhouse"))()
 elseif game.PlaceId == 2951213182 then --withdrew from Misoon go back to life in apartment
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Withrynrosfrend"))()
 elseif game.PlaceId == 4518266946 then --Sciencetits
 
 elseif game.PlaceId == 4661507759 then --Super Conscious Rat Suckers
