@@ -9,7 +9,7 @@ local function allowedPeople(thisPlayer)
 end
 
 if allowedPeople(LocalPlayer) == true then
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/yummysroom/Oml/main/Gems"),true))()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/yummysroom/Oml/main/!Gems"),true))()
     else
         print("join discord to get acces --https://discord.gg/nWctUBtH--")
 end
