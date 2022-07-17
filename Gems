@@ -29,6 +29,6 @@ elseif game.PlaceId == 5071816792 then --slitup
 elseif game.PlaceId == 5188855685 then --plugup
 
 elseif game.PlaceId == 5862433299 then --Goall!1
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Goallie"))()
 elseif game.PlaceId == 740581508 then --Lobby
 end
