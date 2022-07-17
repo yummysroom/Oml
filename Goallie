@@ -1,0 +1,64 @@
+local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
+local MainUI = UILibrary.Load("Score")
+local FirstPage = MainUI.AddPage("Esp")
+local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
+local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
+end)
+local FirstPage = MainUI.AddPage("Teleports")
+local FirstButton = FirstPage.AddButton("Elevator", function()
+		local New_CFrame = CFrame.new(220.62, 20, 50)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+		end)
+		local FirstButton = FirstPage.AddButton("Trucks", function()
+			local New_CFrame = CFrame.new(22, 3.2, 100)
+
+			local ts = game:GetService('TweenService')
+			local char = game.Players.LocalPlayer.Character
+
+			local part = char.HumanoidRootPart
+			local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+			local tp = {CFrame = New_CFrame}
+			ts:Create(part, ti, tp):Play()
+			end)
+		local FirstButton = FirstPage.AddButton("Helipad", function()
+			local New_CFrame = CFrame.new(229.5, 91, -33.14)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+				end)
+				local FirstButton = FirstPage.AddButton("Upperelevator", function()
+					local New_CFrame = CFrame.new(220.81, 54, 52)
+
+					local ts = game:GetService('TweenService')
+					local char = game.Players.LocalPlayer.Character
+
+					local part = char.HumanoidRootPart
+					local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+					local tp = {CFrame = New_CFrame}
+					ts:Create(part, ti, tp):Play()
+					end)
+
+
+
+
+local FirstPage = MainUI.AddPage("Credits")
+local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
+local FirstLabel = FirstPage.AddLabel("Idea - Solutions")
+local FirstButton = FirstPage.AddButton("Solutions Youtube", function()
+setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
+end)
+local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
