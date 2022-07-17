@@ -1,5 +1,5 @@
 local LocalPlayer = game.Players.LocalPlayer
-local Allowed = {1289612805; 766173417;} --UserID instead so you are not gonna do some hardwork to spell their names.
+local Allowed = {1289612805; 766173417;} --UserID
 local function allowedPeople(thisPlayer)
     for _, playerID in pairs(Allowed) do
         if playerID == thisPlayer.UserId then
@@ -9,7 +9,7 @@ local function allowedPeople(thisPlayer)
 end
 
 if allowedPeople(LocalPlayer) == true then
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/yummysroom/Oml/main/no"),true))()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/yummysroom/Oml/main/Gems"),true))()
     else
         print("join discord to use this script")
 end
