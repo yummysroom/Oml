@@ -5,7 +5,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/R
 elseif game.PlaceId == 2625195454 then --Depopedo
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/depot"))()
 elseif game.PlaceId == 3590667014 then --Heliman go BRRR
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Leakedhouse"))()
 elseif game.PlaceId == 2951213182 then --withdrew from Misoon go back to life in apartment
 
 elseif game.PlaceId == 4518266946 then --Sciencetits
