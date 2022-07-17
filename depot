@@ -27,6 +27,10 @@ TextButton.TextColor3 = Color3.fromRGB(175, 186, 255)
 TextButton.TextSize = 61.000
 TextButton.TextTransparency = 0.180
 TextButton.MouseButton1Down:Connect(function()
+	local part = game.CoreGui.ScreenGui
+	
+	part:Destroy()
+	wait(0.1)
 	local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
 	local MainUI = UILibrary.Load("Deposit")
 	local FirstPage = MainUI.AddPage("Esp")
@@ -101,10 +105,6 @@ TextButton.MouseButton1Down:Connect(function()
 		setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
 	end)
 	local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
-	
-	local part = game.CoreGui.ScreenGui
-	
-	part:Destroy()
 end)
 
 UICorner_2.CornerRadius = UDim.new(0.5, 22)
