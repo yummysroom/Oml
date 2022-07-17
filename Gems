@@ -13,7 +13,7 @@ elseif game.PlaceId == 4518266946 then --Sciencetits
 elseif game.PlaceId == 4661507759 then --Super Conscious Rat Suckers
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/Socarsreallyslide"))()
 elseif game.PlaceId == 4768829954 then --Black Ducks
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/youknowitBD"))()
 elseif game.PlaceId == 7799530284 then --Consent
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yummysroom/Oml/main/GonCetc"))()
 elseif game.PlaceId == 2215221144 then --Slaughterhouse
