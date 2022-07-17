@@ -1,74 +1,111 @@
-local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
-local MainUI = UILibrary.Load("Deposit")
-local FirstPage = MainUI.AddPage("Esp")
-local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
-local FirstButton = FirstPage.AddButton("Wxer Esp", function()
-WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
+local ScreenGui = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+
+ScreenGui.Parent = game.CoreGui
+
+
+ImageLabel.Parent = ScreenGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.352979273, 0, 0.267665952, 0)
+ImageLabel.Size = UDim2.new(0, 454, 0, 212)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=10248177645"
+
+UICorner.CornerRadius = UDim.new(0.5, 22)
+UICorner.Parent = ImageLabel
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(7, 7, 7)
+TextButton.BackgroundTransparency = 0.750
+TextButton.Position = UDim2.new(0.352979273, 0, 0.267665952, 0)
+TextButton.Size = UDim2.new(0, 454, 0, 212)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "The Deposit"
+TextButton.TextColor3 = Color3.fromRGB(175, 186, 255)
+TextButton.TextSize = 61.000
+TextButton.TextTransparency = 0.180
+TextButton.MouseButton1Down:Connect(function()
+	local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
+	local MainUI = UILibrary.Load("Deposit")
+	local FirstPage = MainUI.AddPage("Esp")
+	local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
+	local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+		WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
+	end)
+	local FirstPage = MainUI.AddPage("Teleports")
+	local FirstLabel = FirstPage.AddLabel("Did you think i would add a lebel here?")
+	local FirstDropdown = FirstPage.AddDropdown("Teleports", {
+		"Spawn",
+		"Generator",
+		"Escape Van",
+		"Behind The Bank",
+		"Basement Guard",
+		"Upstairs Guard",
+		"Code Computer",
+		"ID Computer",
+		"Vault"
+	}, function(Value)
+		if Value == "Spawn" then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(201, 188, 106)
+		elseif Value == "Escape Van" then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(172, 188, 58)
+		elseif Value == "Vault" then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(184, 174, -40)
+		elseif Value == "Behind The Bank" then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(194, 189, -145)
+		elseif Value == "Upstairs Guard" then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(206, 204, -35)
+		elseif Value == "Basement Guard" then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(156, 172, -65)
+		elseif Value == "Code Computer" then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(184, 204, -24)
+		elseif Value == "ID Computer" then
+			for i,v in pairs(game.Workspace.Level.Geometry.AccComputers:GetChildren()) do
+				if v:FindFirstChild("Interact") then
+					game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+					wait(0.1)
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Part.CFrame * CFrame.new(0, 0, -7)
+				end
+			end
+		elseif Value == "Generator" then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235, 188, 84)
+		end
+	end)
+
+
+
+
+	local FirstPage = MainUI.AddPage("Credits")
+	local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
+	local FirstLabel = FirstPage.AddLabel("Idea - Solutions")
+	local FirstButton = FirstPage.AddButton("Solutions Youtube", function()
+		setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
+	end)
+	local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
+	
+	local part = game.CoreGui.ScreenGui
+	
+	part:Destroy()
 end)
-local FirstPage = MainUI.AddPage("Teleports")
-local FirstLabel = FirstPage.AddLabel("Did you think i would add a lebel here?")
-local FirstDropdown = FirstPage.AddDropdown("Teleports", {
-"Spawn",
-"Generator",
-"Escape Van",
-"Behind The Bank",
-"Basement Guard",
-"Upstairs Guard",
-"Code Computer",
-"ID Computer",
-"Vault"
-}, function(Value)
-if Value == "Spawn" then
-    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	            wait(0.1)
-	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(201, 188, 106)
-	        elseif Value == "Escape Van" then
-    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	            wait(0.1)
-	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(172, 188, 58)
-	            elseif Value == "Vault" then
-    	        game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	            wait(0.1)
-	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(184, 174, -40)
-	        elseif Value == "Behind The Bank" then
-	            game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	            wait(0.1)
-	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(194, 189, -145)
-	    	elseif Value == "Upstairs Guard" then
-	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	            wait(0.1)
-	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(206, 204, -35)
-	        elseif Value == "Basement Guard" then
-	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	            wait(0.1)
-	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(156, 172, -65)
-	        elseif Value == "Code Computer" then
-	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	            wait(0.1)
-	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(184, 204, -24)
-	        elseif Value == "ID Computer" then
-	            for i,v in pairs(game.Workspace.Level.Geometry.AccComputers:GetChildren()) do
-	                if v:FindFirstChild("Interact") then
-	                    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	                    wait(0.1)
-	                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Part.CFrame * CFrame.new(0, 0, -7)
-	                end
-	            end
-	        elseif Value == "Generator" then
-	    	    game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-	            wait(0.1)
-	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235, 188, 84)
-	        end
-end)
 
-
-
-
-local FirstPage = MainUI.AddPage("Credits")
-local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
-local FirstLabel = FirstPage.AddLabel("Idea - Solutions")
-local FirstButton = FirstPage.AddButton("Solutions Youtube", function()
-setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
-end)
-local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
+UICorner_2.CornerRadius = UDim.new(0.5, 22)
+UICorner_2.Parent = TextButton
