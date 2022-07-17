@@ -1,0 +1,88 @@
+local FirstLabel = FirstPage.AddLabel("Take out cam guard before going wild.")
+    local FirstButton = FirstPage.AddButton("Spawn-TopRoom", function()
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-14, 17.5, 21)
+end)
+local FirstButton = FirstPage.AddButton("Spawn-BackCam", function()
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-24, 3, 28.4)
+	            game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-98, 3, 28)
+	            game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-100, 3, 121)
+	            game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-56, 3, 123)
+end)
+local FirstButton = FirstPage.AddButton("Spawn-FireDoor", function()
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-24, 3, 26)
+	            wait(1)
+local teleport_table = {
+    location1 = Vector3.new(17.5, 3, 27), -- your desired position
+    location2 = Vector3.new()  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(0.1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+local FirstButton = FirstPage.AddButton("Vault-Van", function()
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(53, 3, 52)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(14, 3, 52)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(14, 3, 27)
+	            wait(0.1)
+	            local teleport_table = {
+    location1 = Vector3.new(-20, 3, 27), -- your desired position
+    location2 = Vector3.new()  -- your desired position
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        -- a.Completed:Wait()
+        -- print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+	            wait(0.1)
+	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-34, 3, 20)
+end)
