@@ -1,0 +1,166 @@
+local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
+local MainUI = UILibrary.Load("Black Ducks")
+local FirstPage = MainUI.AddPage("Esp")
+local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
+local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
+end)
+local FirstPage = MainUI.AddPage("Teleports")
+local FirstButton = FirstPage.AddButton("Spawn-Shotgun", function()
+	local New_CFrame = CFrame.new(11, 32, -14)
+
+	local ts = game:GetService('TweenService')
+	local char = game.Players.LocalPlayer.Character
+	
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+	wait(0.2)
+	local New_CFrame = CFrame.new(11, 32, 8)
+	
+	local ts = game:GetService('TweenService')
+	local char = game.Players.LocalPlayer.Character
+	
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+	wait(0.2)
+	local New_CFrame = CFrame.new(11, 30, 62)
+	
+	local ts = game:GetService('TweenService')
+	local char = game.Players.LocalPlayer.Character
+	
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+	wait(0.5)
+	local New_CFrame = CFrame.new(-16, 30, 62)
+	
+	local ts = game:GetService('TweenService')
+	local char = game.Players.LocalPlayer.Character
+	
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+	wait(0.2)
+	local New_CFrame = CFrame.new(-16, 30, 137)
+	
+	local ts = game:GetService('TweenService')
+	local char = game.Players.LocalPlayer.Character
+	
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+	wait(0.2)
+	local New_CFrame = CFrame.new(8, 30, 137)
+	
+	local ts = game:GetService('TweenService')
+	local char = game.Players.LocalPlayer.Character
+	
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+	wait(0.2)
+	local New_CFrame = CFrame.new(8, 30, 155)
+	
+	local ts = game:GetService('TweenService')
+	local char = game.Players.LocalPlayer.Character
+	
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+	wait(0.2)
+	local New_CFrame = CFrame.new(-11, 30, 157)
+	
+	local ts = game:GetService('TweenService')
+	local char = game.Players.LocalPlayer.Character
+	
+	local part = char.HumanoidRootPart
+	local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+	local tp = {CFrame = New_CFrame}
+	ts:Create(part, ti, tp):Play()
+end)
+local FirstButton = FirstPage.AddButton("Outside Dev-Inside Dev", function()
+	local New_CFrame = CFrame.new(59, 33, 180.43)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+wait(0.2)
+local New_CFrame = CFrame.new(60, 33, 180)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+
+	end)
+	local FirstButton = FirstPage.AddButton("Outside Op-Inside Op", function()
+		local New_CFrame = CFrame.new(73.7, 33, 82.2)
+
+		local ts = game:GetService('TweenService')
+		local char = game.Players.LocalPlayer.Character
+		
+		local part = char.HumanoidRootPart
+		local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+		local tp = {CFrame = New_CFrame}
+		ts:Create(part, ti, tp):Play()
+		wait(0.2)
+		local New_CFrame = CFrame.new(73.7, 33, 83.2)
+		
+		local ts = game:GetService('TweenService')
+		local char = game.Players.LocalPlayer.Character
+		
+		local part = char.HumanoidRootPart
+		local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+		local tp = {CFrame = New_CFrame}
+		ts:Create(part, ti, tp):Play()
+		
+	end)
+	local FirstButton = FirstPage.AddButton("Outside Workshop-Inside Workshop", function()
+		local New_CFrame = CFrame.new(-40, 33, 82.57)
+
+		local ts = game:GetService('TweenService')
+		local char = game.Players.LocalPlayer.Character
+		
+		local part = char.HumanoidRootPart
+		local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+		local tp = {CFrame = New_CFrame}
+		ts:Create(part, ti, tp):Play()
+		wait(0.2)
+		local New_CFrame = CFrame.new(-40, 33, 81.57)
+		
+		local ts = game:GetService('TweenService')
+		local char = game.Players.LocalPlayer.Character
+		
+		local part = char.HumanoidRootPart
+		local ti = TweenInfo.new(0.2, Enum.EasingStyle.Exponential)
+		local tp = {CFrame = New_CFrame}
+		ts:Create(part, ti, tp):Play()
+	end)
+
+
+
+
+local FirstPage = MainUI.AddPage("Credits")
+local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
+local FirstLabel = FirstPage.AddLabel("Idea - Solutions")
+local FirstButton = FirstPage.AddButton("Solutions Youtube", function()
+setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
+end)
+local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
