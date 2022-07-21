@@ -50,7 +50,7 @@ TextButton.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
 	end)
 	local FirstPage = MainUI.AddPage("Teleports")
-	local FirstLabel = FirstPage.AddLabel("Did you think i would add a lebel here?")
+	local FirstLabel = FirstPage.AddLabel("Did you think i would add a label here?")
 	local FirstDropdown = FirstPage.AddDropdown("Teleports", {
 		"Spawn",
 		"Generator",
