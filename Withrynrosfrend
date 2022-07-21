@@ -1,4 +1,7 @@
 local FirstLabel = FirstPage.AddLabel("Take out cam guard before going wild.")
+   local FirstButton = FirstPage.AddButton("Spawn Kaycard", function()
+	workspace.Level.GroundItems.KeycardBlue.Base.CFrame = workspace.Level.Players.Player.Head.CFrame
+end)
     local FirstButton = FirstPage.AddButton("Spawn-TopRoom", function()
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 	            wait(0.1)
