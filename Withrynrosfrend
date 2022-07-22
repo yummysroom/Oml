@@ -7,7 +7,13 @@ WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
 end)
 local FirstPage = MainUI.AddPage("STUFF c:")
-local FirstLabel = FirstPage.AddLabel("Take out cam guard before going wild.")
+local FirstLabel = FirstPage.AddLabel("Keycard?")
+   local FirstToggle = FirstPage.AddToggle("Dupe Keycard", false, function(Value)
+while true do
+workspace.Level.GroundItems.KeycardBlue.Base.CFrame = workspace.Level.Players.Player.Head.CFrame
+wait()
+end
+end)
    local FirstButton = FirstPage.AddButton("Spawn Kaycard", function()
 	workspace.Level.GroundItems.KeycardBlue.Base.CFrame = workspace.Level.Players.Player.Head.CFrame
 end)
