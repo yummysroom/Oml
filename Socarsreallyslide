@@ -6,6 +6,71 @@ local FirstButton = FirstPage.AddButton("Wxer Esp", function()
 WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
 end)
+
+local FirstButton = FirstPage.AddButton("Homemade esp (cant find out how to use onChildAdded", function()
+	 --PowerBox Esp
+	 for i,v in pairs(game.Workspace.Level.Geometry:GetChildren()) do
+                    if v.Name == "PowerBox" then
+                        if v.Case.BasePart:FindFirstChild("localoca") then
+                        else
+                            local Pesp = Instance.new('Highlight') 
+    	
+    	                    Pesp.Parent = v
+                    	    Pesp.Name = "pesp"
+    	
+                    	   
+                        end
+                    end
+end
+--Npc Esp
+for i,v in pairs(game.Workspace.Level.Actors:GetChildren()) do
+local Nppc = Instance.new("Highlight")
+
+Nppc.Name = "HeadN"
+Nppc.Parent = v
+end
+
+local folder = game.Workspace.Level.Actors
+
+local function onChildAdded(child)
+	local highlight = Instance.new("Highlight")
+	highlight.Name = "HeadN"
+	highlight.Parent = child
+end
+
+folder.ChildAdded:Connect(onChildAdded)
+
+
+--Computer Esp
+for i,v in pairs(game.Workspace.Level.Geometry:GetChildren()) do
+            local oml = 100
+            if v.Name == "Computer" then
+            if oml == 1 then
+            else
+            local Cesp = Instance.new("Highlight")
+            
+            Cesp.Parent = v 
+            Cesp.Name = "Cesp"
+        end
+    end
+end
+
+--Cam Esp
+for i,v in pairs(game.Workspace.Level.Glass:GetChildren()) do
+            local oml = 100
+            if v.Name == "ExteriorCam" then
+            if oml == 1 then
+            else
+            local Caesp = Instance.new("Highlight")
+            
+            Caesp.Parent = v 
+            Caesp.Name = "Caesp"
+        end
+    end
+end
+
+end)
+
 local FirstPage = MainUI.AddPage("Teleports")
 
 
