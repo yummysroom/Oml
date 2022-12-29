@@ -1,51 +1,8 @@
-local ScreenGui = Instance.new("ScreenGui")
-local ImageLabel = Instance.new("ImageLabel")
-local UICorner = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-
-ScreenGui.Parent = game.CoreGui
-
-
-ImageLabel.Parent = ScreenGui
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.Position = UDim2.new(0.352979273, 0, 0.267665952, 0)
-ImageLabel.Size = UDim2.new(0, 454, 0, 212)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=10248177645"
-
-UICorner.CornerRadius = UDim.new(0.5, 22)
-UICorner.Parent = ImageLabel
-
-TextButton.Parent = ScreenGui
-TextButton.BackgroundColor3 = Color3.fromRGB(7, 7, 7)
-TextButton.BackgroundTransparency = 0.750
-TextButton.Position = UDim2.new(0.352979273, 0, 0.267665952, 0)
-TextButton.Size = UDim2.new(0, 454, 0, 212)
-TextButton.Font = Enum.Font.Cartoon
-TextButton.Text = "The Deposit"
-TextButton.TextColor3 = Color3.fromRGB(175, 186, 255)
-TextButton.TextSize = 61.000
-TextButton.TextTransparency = 0.180
-TextButton.MouseButton1Down:Connect(function()
-	local Button = game.CoreGui.ScreenGui.TextButton
-	local frame = game.CoreGui.ScreenGui.ImageLabel
-	
-	Button:TweenPosition(UDim2.new(0.35,0,1.5,0),
-	    Enum.EasingDirection.Out,
-	    Enum.EasingStyle.Sine,
-	    .7)
-	
-	frame:TweenPosition(UDim2.new(0.35,0,1.5,0),
-	    Enum.EasingDirection.Out,
-	    Enum.EasingStyle.Sine,
-	    .7)
-	
-	wait(.3)
 	local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
 	local MainUI = UILibrary.Load("Deposit")
 	local FirstPage = MainUI.AddPage("Esp")
 	local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
-	local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+	local FirstButton = FirstPage.AddButton("Wxer Esp (not working currently)", function()
 		WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
 	end)
@@ -104,7 +61,16 @@ TextButton.MouseButton1Down:Connect(function()
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(235, 188, 84)
 		end
 	end)
+local FirstButton = FirstPage.AddButton("Void Npcs -only works in solo", function()
+		game.Players.LocalPlayer.MaximumSimulationRadius = 10000000
 
+for i,v in pairs(game.Workspace.Level.Actors:GetChildren()) do
+                    if v.Character.HumanoidRootPart:FindFirstChild("niggertime") then
+                    else
+                       v.Character.HumanoidRootPart.CFrame = CFrame.new(1, 1, 1)
+                    end
+		    end
+	end)
 
 
 
