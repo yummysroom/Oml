@@ -1,11 +1,64 @@
 local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
-local MainUI = UILibrary.Load("Game")
+local MainUI = UILibrary.Load("Financier")
 local FirstPage = MainUI.AddPage("Esp")
 local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
-local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+local FirstButton = FirstPage.AddButton("Wxer Esp (not currently working)", function()
 WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
 end)
+
+local FirstButton = FirstPage.AddButton("Alternative esp", function()
+	 --PowerBox Esp
+	 for i,v in pairs(game.Workspace.Level.Geometry:GetChildren()) do
+                    if v.Name == "PowerBox" then
+                        if v.Case.BasePart:FindFirstChild("localoca") then
+                        else
+                            local Pesp = Instance.new('Highlight') 
+    	
+    	                    Pesp.Parent = v
+                    	    Pesp.Name = "pesp"
+    	
+                    	   
+                        end
+                    end
+end
+--Npc Esp
+for i,v in pairs(game.Workspace.Level.Actors:GetChildren()) do
+local Nppc = Instance.new("Highlight")
+
+Nppc.Name = "HeadN"
+Nppc.Parent = v
+end
+--Computer Esp
+for i,v in pairs(game.Workspace.Level.Geometry:GetChildren()) do
+            local oml = 100
+            if v.Name == "Computer" then
+            if oml == 1 then
+            else
+            local Cesp = Instance.new("Highlight")
+            
+            Cesp.Parent = v 
+            Cesp.Name = "Cesp"
+        end
+    end
+end
+
+--Cam Esp
+for i,v in pairs(game.Workspace.Level.Glass:GetChildren()) do
+            local oml = 100
+            if v.Name == "ExteriorCam" then
+            if oml == 1 then
+            else
+            local Caesp = Instance.new("Highlight")
+            
+            Caesp.Parent = v 
+            Caesp.Name = "Caesp"
+        end
+    end
+end
+
+end)
+
 local FirstPage = MainUI.AddPage("Teleports")
 local FirstLabel = FirstPage.AddLabel("When you dont know how to farm Concept .-.")
 local FirstDropdown = FirstPage.AddDropdown("Teleports", {
