@@ -2,7 +2,7 @@ local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))(
 local MainUI = UILibrary.Load("Black Ducks")
 local FirstPage = MainUI.AddPage("Esp")
 local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
-local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+local FirstButton = FirstPage.AddButton("Wxer Esp (not currently working)", function()
 WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
 end)
@@ -154,7 +154,16 @@ ts:Create(part, ti, tp):Play()
 		ts:Create(part, ti, tp):Play()
 	end)
 
+local FirstButton = FirstPage.AddButton("Wxer Esp (not currently working)", function()
+game.Players.LocalPlayer.MaximumSimulationRadius = 10000000
 
+for i,v in pairs(game.Workspace.Level.Actors:GetChildren()) do
+                    if v.Character.HumanoidRootPart:FindFirstChild("Npc101") then
+                    else
+                       v.Character.HumanoidRootPart.CFrame = CFrame.new(1, 1, 1)
+                    end
+		    end
+end)
 
 
 local FirstPage = MainUI.AddPage("Credits")
