@@ -46,6 +46,17 @@ if Value == "Cam Op" then
 	            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8.4, 23.5, 57.36)
     	    end
 end)
+local FirstButton = FirstPage.AddButton("Wxer Esp (not currently working", function()
+game.Players.LocalPlayer.MaximumSimulationRadius = 10000000
+
+for i,v in pairs(game.Workspace.Level.Actors:GetChildren()) do
+                    if v.Character.HumanoidRootPart:FindFirstChild("Npc101") then
+                    else
+                       v.Character.HumanoidRootPart.CFrame = CFrame.new(1, 1, 1)
+                    end
+		    end
+end)
+
 local FirstPage = MainUI.AddPage("Credits")
 local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
 local FirstLabel = FirstPage.AddLabel("Idea - Solutions")
