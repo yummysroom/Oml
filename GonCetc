@@ -2,7 +2,7 @@ local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))(
 local MainUI = UILibrary.Load("Concept")
 local FirstPage = MainUI.AddPage("Esp")
 local FirstLabel = FirstPage.AddLabel("Super nice Esp v")
-local FirstButton = FirstPage.AddButton("Wxer Esp", function()
+local FirstButton = FirstPage.AddButton("Wxer Esp (not currently working", function()
 WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
 end)
