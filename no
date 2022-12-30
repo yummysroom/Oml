@@ -107,7 +107,7 @@ local FirstLabel = FirstPage.AddLabel("4. ready up and use i to toggle inventory
 
 local FirstButton = FirstPage.AddButton("The-Holiday -Made by Yessor", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Not-Yesnt/VulnerablePoint/main/TheHoliday'))() 
-end
+end)
 
 
 
