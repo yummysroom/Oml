@@ -72,13 +72,8 @@ end
 end)
 
 local FirstPage = MainUI.AddPage("STUFF c:")
-local FirstLabel = FirstPage.AddLabel("Keycard?")
-   local FirstToggle = FirstPage.AddToggle("Dupe Keycard", false, function(Value)
-while true do
-workspace.Level.GroundItems.KeycardBlue.Base.CFrame = workspace.Level.Players.Player.Head.CFrame
-wait()
-end
-end)
+local FirstLabel = FirstPage.AddLabel("One of the few lucky")
+
    local FirstButton = FirstPage.AddButton("Spawn Kaycard", function()
 	workspace.Level.GroundItems.KeycardBlue.Base.CFrame = workspace.Level.Players.Player.Head.CFrame
 end)
