@@ -93,7 +93,19 @@ if Value == "Spawn" then
     	    end
 end)
 
+local FirstPage = MainUI.AddPage("Mods")
+local FirstLabel = FirstPage.AddLabel("This mod is made by Yessor!")
+local FirstLabel = FirstPage.AddLabel("1. Game difficulty has to be Rookie-solo")
+local FirstLabel = FirstPage.AddLabel("2. Click before game start")
+local FirstLabel = FirstPage.AddLabel("3. Empty your loadout")
+local FirstLabel = FirstPage.AddLabel("4. Done")
+local FirstButton = FirstPage.AddButton("The-Associates", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Not-Yesnt/VulnerablePoint/main/TheAssociates'))()
+end
 
+local FirstButton = FirstPage.AddButton("The-Associates -Yessor discord", function()
+	setclipboard("https://discord.gg/KDkXttP5ZA")
+end
 
 local FirstPage = MainUI.AddPage("Credits")
 local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
@@ -101,4 +113,3 @@ local FirstLabel = FirstPage.AddLabel("Idea - Solutions")
 local FirstButton = FirstPage.AddButton("Solutions Youtube", function()
 setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
 end)
-local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
