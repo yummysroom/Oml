@@ -1,11 +1,6 @@
 local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
 local MainUI = UILibrary.Load("SRCS")
 local FirstPage = MainUI.AddPage("Esp")
-local FirstLabel = FirstPage.AddLabel("Super Nice Esp v")
-local FirstButton = FirstPage.AddButton("Wxer Esp", function()
-WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
-end)
 
 local FirstButton = FirstPage.AddButton("Homemade esp", function()
 	 --PowerBox Esp
