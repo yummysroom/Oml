@@ -1,7 +1,7 @@
 loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
 local UILibrary = loadstring(game:HttpGet("https://pastebin.com/raw/V1ca2q9s"))()
 local MainUI = UILibrary.Load("Blacksite")
-local FirstPage = MainUI.AddPage("Esp")
+local FirstPage = MainUI.AddPage("Stuff")
 
 local FirstButton = FirstPage.AddButton("Homemade esp", function()
 	 --PowerBox Esp
@@ -67,6 +67,83 @@ for i,v in pairs(game.Workspace.Level.Glass:GetChildren()) do
         end
     end
 end
+
+end)
+
+local FirstButton = FirstPage.AddButton("Threat-O-Meter", function()
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances
+local ThreatGui = Instance.new("ScreenGui")
+local Frame1 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local frame2 = Instance.new("Frame")
+local Threat = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Number = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+
+--Properties:
+
+ThreatGui.Name = "ThreatGui"
+ThreatGui.Parent = game.CoreGui
+ThreatGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame1.Name = "Frame1"
+Frame1.Parent = ThreatGui
+Frame1.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Frame1.BackgroundTransparency = 0.350
+Frame1.BorderColor3 = Color3.fromRGB(62, 62, 62)
+Frame1.Position = UDim2.new(0.50126344, 0, 0.805494547, 0)
+Frame1.Size = UDim2.new(0, 250, 0, 150)
+
+UICorner.CornerRadius = UDim.new(0, 21)
+UICorner.Parent = Frame1
+
+frame2.Name = "frame2"
+frame2.Parent = Frame1
+frame2.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+frame2.BorderColor3 = Color3.fromRGB(62, 62, 62)
+frame2.Position = UDim2.new(0, 0, 0.199999988, 0)
+frame2.Size = UDim2.new(0, 250, 0, 146)
+
+Threat.Name = "Threat"
+Threat.Parent = frame2
+Threat.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Threat.BorderSizePixel = 0
+Threat.Position = UDim2.new(0.100000001, 0, 0.0410958901, 0)
+Threat.Size = UDim2.new(0, 200, 0, 50)
+Threat.Font = Enum.Font.SciFi
+Threat.Text = "Threat"
+Threat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Threat.TextSize = 46.000
+
+UICorner_2.Parent = Threat
+
+Number.Name = "Number"
+Number.Parent = frame2
+Number.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Number.BorderSizePixel = 0
+Number.Position = UDim2.new(0.100000001, 0, 0.479452044, 0)
+Number.Size = UDim2.new(0, 200, 0, 50)
+Number.Font = Enum.Font.SciFi
+local player = game.Players.LocalPlayer
+local elapsedTime = 0
+
+game:GetService("RunService").RenderStepped:Connect(function(dt)
+  elapsedTime = elapsedTime + dt
+  if elapsedTime >= 1 then
+    elapsedTime = elapsedTime - 1
+    Number.Text = game:GetService("Workspace").Level.Flags:FindFirstChild(player.Name).Threat.Value
+  end
+end)
+
+Number.TextColor3 = Color3.fromRGB(0, 0, 0)
+Number.TextSize = 61.000
+
+UICorner_3.Parent = Number
+
 
 end)
 
