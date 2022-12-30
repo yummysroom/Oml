@@ -143,12 +143,3 @@ for i,v in pairs(game.Workspace.Level.Actors:GetChildren()) do
 	local FirstButton = FirstPage.AddButton("Solutions Youtube", function()
 		setclipboard("https://www.youtube.com/c/SolutionsWithSynapseX")
 	end)
-	local FirstLabel = FirstPage.AddLabel("SUPER NEAT ESP - Wxer")
-    wait()
-    local Gui = game.CoreGui.ScreenGui
-    
-    Gui:Destroy()
-end)
-
-UICorner_2.CornerRadius = UDim.new(0.5, 22)
-UICorner_2.Parent = TextButton
