@@ -103,7 +103,7 @@ local FirstPage = MainUI.AddPage("Mods")
 local FirstLabel = FirstPage.AddLabel("1. Make sure Game difficulty is Rookie-solo")
 local FirstLabel = FirstPage.AddLabel("2. Click this before start")
 local FirstLabel = FirstPage.AddLabel("3. Empty Loadout")
-local FirstLabel = FirstPage.AddLabel("4. ready up and use i to toggle inventory and j to open objective list")
+local FirstLabel = FirstPage.AddLabel("4. Use i to toggle inventory and j to open objective list")
 
 local FirstButton = FirstPage.AddButton("The-Holiday -Made by Yessor", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Not-Yesnt/VulnerablePoint/main/TheHoliday'))() 
