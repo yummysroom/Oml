@@ -172,11 +172,11 @@ local FirstLabel = FirstPage.AddLabel("3. Empty your loadout")
 local FirstLabel = FirstPage.AddLabel("4. Done")
 local FirstButton = FirstPage.AddButton("The-Associates", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Not-Yesnt/VulnerablePoint/main/TheAssociates'))()
-end
+end)
 
 local FirstButton = FirstPage.AddButton("The-Associates -Yessor discord", function()
 	setclipboard("https://discord.gg/KDkXttP5ZA")
-end
+end)
 
 local FirstPage = MainUI.AddPage("Credits")
 local FirstLabel = FirstPage.AddLabel("Creater - Nightshade#3425")
