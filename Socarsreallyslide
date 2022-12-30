@@ -7,7 +7,7 @@ WxerSoftworks = 'https://discord.gg/d8Jc9ggzJU'
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Wxer/roblox/main/random_scripts/entrypoint.lua'))()
 end)
 
-local FirstButton = FirstPage.AddButton("Homemade esp (cant find out how to use onChildAdded", function()
+local FirstButton = FirstPage.AddButton("Homemade esp", function()
 	 --PowerBox Esp
 	 for i,v in pairs(game.Workspace.Level.Geometry:GetChildren()) do
                     if v.Name == "PowerBox" then
@@ -33,12 +33,15 @@ end
 local folder = game.Workspace.Level.Actors
 
 local function onChildAdded(child)
+    wait(2)
+
 	local highlight = Instance.new("Highlight")
 	highlight.Name = "HeadN"
 	highlight.Parent = child
 end
 
 folder.ChildAdded:Connect(onChildAdded)
+
 
 
 --Computer Esp
