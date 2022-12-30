@@ -33,12 +33,15 @@ end
 local folder = game.Workspace.Level.Actors
 
 local function onChildAdded(child)
+    wait(2)
+
 	local highlight = Instance.new("Highlight")
 	highlight.Name = "HeadN"
 	highlight.Parent = child
 end
 
 folder.ChildAdded:Connect(onChildAdded)
+
 
 
 --Computer Esp
