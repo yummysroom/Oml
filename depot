@@ -53,18 +53,39 @@ end
 
 
 --Computer Esp
-for i,v in pairs(game.Workspace.Level.Geometry:GetChildren()) do
-            local oml = 100
-            if v.Name == "Computer" then
-            if oml == 1 then
-            else
-            local Cesp = Instance.new("Highlight")
-            
-            Cesp.Parent = v 
-            Cesp.Name = "Cesp"
-        end
+for i, v in pairs(game.Workspace.Level.Geometry.AccComputers:GetChildren()) do
+    if v:FindFirstChild("Interact") then
+        local highlight = Instance.new("Highlight")
+        highlight.Parent = v
+        highlight.Name = "H"
+        highlight.FillColor = Color3.new(50, 0, 100)
+        local BillboardGui = Instance.new("BillboardGui")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+
+BillboardGui.Parent = v
+BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BillboardGui.Active = true
+BillboardGui.AlwaysOnTop = true
+BillboardGui.LightInfluence = 1.000
+BillboardGui.MaxDistance = 50.000
+BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+
+TextLabel.Parent = BillboardGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+TextLabel.BackgroundTransparency = 0.450
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "ID Computer"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 36.000
+TextLabel.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 14)
+UICorner.Parent = TextLabel
     end
 end
+
 
 --Cam Esp
 for i,v in pairs(game.Workspace.Level.Glass:GetChildren()) do
