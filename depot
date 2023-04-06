@@ -89,15 +89,11 @@ end
 
 --Cam Esp
 for i,v in pairs(game.Workspace.Level.Glass:GetChildren()) do
-            local oml = 100
-            if v.Name == "ExteriorCam" then
-            if oml == 1 then
-            else
-            local Caesp = Instance.new("Highlight")
-            
-            Caesp.Parent = v 
-            Caesp.Name = "Caesp"
-        end
+    if v.Name == "ExteriorCam" then
+        local Caesp = Instance.new("Highlight")
+        Caesp.Parent = v 
+        Caesp.Name = "LESP"
+        Caesp.FillColor = Color3.new(10, 10, 0)
     end
 end
 
@@ -170,10 +166,8 @@ for i,v in pairs(game.Workspace.Level.Actors:GetChildren()) do
 	end)
 
 local FirstButton = FirstPage.AddButton("Threat-O-Meter", function()
--- Gui to Lua
--- Version: 3.2
 
--- Instances
+--Threat gui
 local ThreatGui = Instance.new("ScreenGui")
 local Frame1 = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -182,8 +176,6 @@ local Threat = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
 local Number = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
-
---Properties:
 
 ThreatGui.Name = "ThreatGui"
 ThreatGui.Parent = game.CoreGui
