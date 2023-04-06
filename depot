@@ -3,20 +3,6 @@
 	local FirstPage = MainUI.AddPage("Esp")
 	
 	local FirstButton = FirstPage.AddButton("Homemade esp", function()
-	 --PowerBox Esp
-	 for i,v in pairs(game.Workspace.Level.Geometry:GetChildren()) do
-                    if v.Name == "PowerBox" then
-                        if v.Case.BasePart:FindFirstChild("localoca") then
-                        else
-                            local Pesp = Instance.new('Highlight') 
-    	
-    	                    Pesp.Parent = v
-                    	    Pesp.Name = "pesp"
-    	
-                    	   
-                        end
-                    end
-end
 --Npc Esp
 for i,v in pairs(game.Workspace.Level.Actors:GetChildren()) do
 local Nppc = Instance.new("Highlight")
