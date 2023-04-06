@@ -169,56 +169,32 @@ local FirstButton = FirstPage.AddButton("Threat-O-Meter", function()
 
 --Threat gui
 local ThreatGui = Instance.new("ScreenGui")
-local Frame1 = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local frame2 = Instance.new("Frame")
-local Threat = Instance.new("TextLabel")
-local UICorner_2 = Instance.new("UICorner")
-local Number = Instance.new("TextLabel")
-local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
 
 ThreatGui.Name = "ThreatGui"
 ThreatGui.Parent = game.CoreGui
 ThreatGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame1.Name = "Frame1"
-Frame1.Parent = ThreatGui
-Frame1.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-Frame1.BackgroundTransparency = 0.350
-Frame1.BorderColor3 = Color3.fromRGB(62, 62, 62)
-Frame1.Position = UDim2.new(0.50126344, 0, 0.805494547, 0)
-Frame1.Size = UDim2.new(0, 250, 0, 150)
+Frame.Parent = ThreatGui
+Frame.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Frame.BorderColor3 = Color3.fromRGB(113, 176, 221)
+Frame.Position = UDim2.new(0.434351146, 0, 0.871584713, 0)
+Frame.Size = UDim2.new(0.130534351, 0, 0.224043712, 0)
 
-UICorner.CornerRadius = UDim.new(0, 21)
-UICorner.Parent = Frame1
+UICorner.CornerRadius = UDim.new(0, 16)
+UICorner.Parent = Frame
 
-frame2.Name = "frame2"
-frame2.Parent = Frame1
-frame2.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-frame2.BorderColor3 = Color3.fromRGB(62, 62, 62)
-frame2.Position = UDim2.new(0, 0, 0.199999988, 0)
-frame2.Size = UDim2.new(0, 250, 0, 146)
-
-Threat.Name = "Threat"
-Threat.Parent = frame2
-Threat.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Threat.BorderSizePixel = 0
-Threat.Position = UDim2.new(0.100000001, 0, 0.0410958901, 0)
-Threat.Size = UDim2.new(0, 200, 0, 50)
-Threat.Font = Enum.Font.SciFi
-Threat.Text = "Threat"
-Threat.TextColor3 = Color3.fromRGB(0, 0, 0)
-Threat.TextSize = 46.000
-
-UICorner_2.Parent = Threat
-
-Number.Name = "Number"
-Number.Parent = frame2
-Number.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Number.BorderSizePixel = 0
-Number.Position = UDim2.new(0.100000001, 0, 0.479452044, 0)
-Number.Size = UDim2.new(0, 200, 0, 50)
-Number.Font = Enum.Font.SciFi
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+TextLabel.BorderColor3 = Color3.fromRGB(36, 56, 86)
+TextLabel.Position = UDim2.new(0.0760233924, 0, 0.249616235, 0)
+TextLabel.Size = UDim2.new(0.8479532, 0, 0.279720277, 0)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Insert Threat here"
 local player = game.Players.LocalPlayer
 local elapsedTime = 0
 
@@ -226,15 +202,34 @@ game:GetService("RunService").RenderStepped:Connect(function(dt)
   elapsedTime = elapsedTime + dt
   if elapsedTime >= 1 then
     elapsedTime = elapsedTime - 1
-    Number.Text = game:GetService("Workspace").Level.Flags:FindFirstChild(player.Name).Threat.Value
+    TextLabel.Text = game:GetService("Workspace").Level.Flags:FindFirstChild(player.Name).Threat.Value
   end
 end)
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
-Number.TextColor3 = Color3.fromRGB(0, 0, 0)
-Number.TextSize = 61.000
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0350877196, 0, -7.4505806e-09, 0)
+TextLabel_2.Size = UDim2.new(0.9239766, 0, 0.109756097, 0)
+TextLabel_2.Font = Enum.Font.PatrickHand
+TextLabel_2.Text = "Nightshade project"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 18.000
 
-UICorner_3.Parent = Number
-
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0350877196, 0, 0.10975609, 0)
+TextLabel_3.Size = UDim2.new(0.9239766, 0, 0.109756097, 0)
+TextLabel_3.Font = Enum.Font.Bangers
+TextLabel_3.Text = "ThreatGui"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 22.000
+TextLabel_3.TextWrapped = true
 
 end)
 
