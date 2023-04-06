@@ -37,6 +37,19 @@ end
 
 folder.ChildAdded:Connect(onChildAdded)
 
+--Manager
+for _, npc in ipairs(game.workspace.Level.Actors:GetChildren()) do
+   if npc.Name == "NPC2" and npc.Character:FindFirstChild("Hat") and npc.Character.Hat.BrickColor == BrickColor.new("Smoky grey") then
+      local manager = npc.Character.Inventory.KeycardRed.Parent.Parent
+      local highlight = Instance.new("Highlight")
+      
+      highlight.Parent = manager.Parent
+      highlight.Name = "Special man"
+      highlight.FillColor = Color3.new(0, 10, 255)
+      highlight.OutlineColor = Color3.new(10, 10, 10)
+   end
+end
+
 
 
 --Computer Esp
