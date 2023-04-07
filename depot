@@ -120,6 +120,320 @@ UICorner.Parent = TextLabel
 
 end)
 	
+	local FirstButton = FirstPage.AddButton("Homemade esp", function()
+		local spawn = Instance.new("Part")
+spawn.Parent = game.Workspace
+spawn.Name = "spawn"
+spawn.Anchored = true
+spawn.BottomSurface = Enum.SurfaceType.Smooth
+spawn.CFrame = CFrame.new(202.030136, 186.099991, 104.250084, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+spawn.Rotation = Vector3.new(0, -90, 0)
+spawn.Size = Vector3.new(21.7, 0.2, 16.6)
+spawn.TopSurface = Enum.SurfaceType.Smooth
+wait(0.1)
+
+local geometryFolder = game.Workspace.Level.Geometry
+
+-- Loop through all descendants of the Geometry folder and delete them, except for objects named "Safe" and "AccComputers"
+local function deleteGeometry()
+    for _, descendant in ipairs(geometryFolder:GetChildren()) do
+        if descendant.Name ~= "Safe" and descendant.Name ~= "AccComputers" and descendant.Name ~= "Vault" and descendant.Name ~= "ManagerComputer" and descendant.Name ~= "VaultKeypad" and descendant.Name ~= "Transformer" and descendant.Name ~= "BankArchives" and descendant.Name ~= "Doors" then
+            descendant:Destroy()
+        end
+    end
+end
+
+-- Call the deleteGeometry function
+deleteGeometry()
+
+local geometry2Folder = game.Workspace.Level.Glass
+
+-- Loop through all descendants of the Geometry folder and delete them, except for objects named "Safe" and "AccComputers"
+local function delete2Geometry()
+    for _, descendant in ipairs(geometry2Folder:GetChildren()) do
+        if descendant.Name ~= "ExteriorCam" and descendant.Name ~= "DepositDoor" then
+            descendant:Destroy()
+        end
+    end
+end
+
+-- Call the deleteGeometry function
+delete2Geometry()
+
+wait(0.2)
+
+local i = game.Workspace
+local lowPolymap = Instance.new("Folder")
+lowPolymap.Parent = game.Workspace
+lowPolymap.Name = "LowPolymap"
+wait(0.1)
+local stairs = Instance.new("Part")
+stairs.Parent = i
+stairs.Name = "stairs"
+stairs.Anchored = true
+stairs.BottomSurface = Enum.SurfaceType.Smooth
+stairs.CFrame = CFrame.new(204.920364, 191.838806, -15.7200718, 0.9902637, 0.0857028663, 0.10969466, 7.45057616e-09, 0.788010657, -0.615661502, -0.139204532, 0.609667242, 0.780338347)
+stairs.Rotation = Vector3.new(38.3, 6.3, -4.95)
+stairs.Size = Vector3.new(4, 1, 32.7)
+stairs.TopSurface = Enum.SurfaceType.Smooth
+
+local floorup = Instance.new("Part")
+floorup.Parent = i
+floorup.Name = "floorup"
+floorup.Anchored = true
+floorup.BottomSurface = Enum.SurfaceType.Smooth
+floorup.CFrame = CFrame.new(196.299973, 202.25, -37.7000084, 1, 0, 0, 0, 1, -2.98023224e-08, 0, 2.98023259e-08, 1)
+floorup.Size = Vector3.new(42.8, 0.1, 18.6)
+floorup.TopSurface = Enum.SurfaceType.Smooth
+
+local uppersection = Instance.new("Part")
+uppersection.Parent = i
+uppersection.Name = "uppersection"
+uppersection.Anchored = true
+uppersection.BottomSurface = Enum.SurfaceType.Smooth
+uppersection.CFrame = CFrame.new(206.550003, 202.25, -74.8000031, 1, 0, 0, 0, 1, -3.55271368e-15, 0, 3.55271368e-15, 1)
+uppersection.Size = Vector3.new(64.1, 0.1, 55.4)
+uppersection.TopSurface = Enum.SurfaceType.Smooth
+
+local managerpc = Instance.new("Part")
+managerpc.Parent = i
+managerpc.Name = "managerpc"
+managerpc.Anchored = true
+managerpc.BottomSurface = Enum.SurfaceType.Smooth
+managerpc.CFrame = CFrame.new(187.900009, 202.25, -28.2000008, 1, 0, 0, 0, 1, -3.55271368e-15, 0, 3.55271368e-15, 1)
+managerpc.Size = Vector3.new(20.2, 0.1, 15.4)
+managerpc.TopSurface = Enum.SurfaceType.Smooth
+
+local walkway = Instance.new("Part")
+walkway.Parent = i
+walkway.Name = "walkway"
+walkway.Anchored = true
+walkway.BottomSurface = Enum.SurfaceType.Smooth
+walkway.CFrame = CFrame.new(212.388809, 186.700012, 38.2986565, 0.99026376, 4.18039559e-09, 0.139203891, 0, 1, -3.0030737e-08, -0.139203891, 2.97383504e-08, 0.99026382)
+walkway.Rotation = Vector3.new(0, 8, 0)
+walkway.Size = Vector3.new(4, 0.2, 94.5)
+walkway.TopSurface = Enum.SurfaceType.Smooth
+
+local towalkway = Instance.new("Part")
+towalkway.Parent = i
+towalkway.Name = "towalkway"
+towalkway.Anchored = true
+towalkway.BottomSurface = Enum.SurfaceType.Smooth
+towalkway.CFrame = CFrame.new(208.68013, 186.099991, 83.9000702, 0, 3.55271368e-15, 1, 4.4408921e-16, 1, -3.55271326e-15, -1, 4.4408921e-16, -1.57772162e-30)
+towalkway.Rotation = Vector3.new(0, 90, 0)
+towalkway.Size = Vector3.new(4, 0.2, 24.9)
+towalkway.TopSurface = Enum.SurfaceType.Smooth
+
+local totowalkway = Instance.new("Part")
+totowalkway.Parent = i
+totowalkway.Name = "totowalkway"
+totowalkway.Anchored = true
+totowalkway.BottomSurface = Enum.SurfaceType.Smooth
+totowalkway.CFrame = CFrame.new(198.330139, 186.099991, 87.9000778, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+totowalkway.Rotation = Vector3.new(-180, 0, -180)
+totowalkway.Size = Vector3.new(4, 0.2, 13.4)
+totowalkway.TopSurface = Enum.SurfaceType.Smooth
+
+local spawn = Instance.new("Part")
+spawn.Parent = i
+spawn.Name = "spawn"
+spawn.Anchored = true
+spawn.BottomSurface = Enum.SurfaceType.Smooth
+spawn.CFrame = CFrame.new(202.030136, 186.099991, 104.250084, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+spawn.Rotation = Vector3.new(0, -90, 0)
+spawn.Size = Vector3.new(21.7, 0.2, 16.6)
+spawn.TopSurface = Enum.SurfaceType.Smooth
+
+local stas = Instance.new("Part")
+stas.Parent = i
+stas.Name = "stas"
+stas.Anchored = true
+stas.BottomSurface = Enum.SurfaceType.Smooth
+stas.CFrame = CFrame.new(187.499985, 202.25, -109.100014, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+stas.Size = Vector3.new(11.2, 0.1, 13.4)
+stas.TopSurface = Enum.SurfaceType.Smooth
+
+local downward = Instance.new("Part")
+downward.Parent = i
+downward.Name = "downward"
+downward.Anchored = true
+downward.BottomSurface = Enum.SurfaceType.Smooth
+downward.CFrame = CFrame.new(199.688416, 198.500427, -108.050011, 0.838443518, 0.544988692, 0, -0.544988692, 0.838443518, 0, 0, 0, 1)
+downward.Rotation = Vector3.new(0, 0, -33)
+downward.Size = Vector3.new(18, 0.1, 14.7)
+downward.TopSurface = Enum.SurfaceType.Smooth
+
+local moredown = Instance.new("Part")
+moredown.Parent = i
+moredown.Name = "moredown"
+moredown.Anchored = true
+moredown.BottomSurface = Enum.SurfaceType.Smooth
+moredown.CFrame = CFrame.new(198.97287, 191.072906, -124.000008, 1.49011612e-08, -0.544988751, 0.838443398, 0, 0.838443577, 0.544988632, -1.00000036, 0, 0)
+moredown.Rotation = Vector3.new(-90, 57, 90)
+moredown.Size = Vector3.new(18, 0.1, 14.7)
+moredown.TopSurface = Enum.SurfaceType.Smooth
+
+local floorindown = Instance.new("Part")
+floorindown.Parent = i
+floorindown.Name = "floorindown"
+floorindown.Anchored = true
+floorindown.BottomSurface = Enum.SurfaceType.Smooth
+floorindown.CFrame = CFrame.new(209.600021, 194.450073, -115, 1.24937714e-08, 2.02922849e-16, 1, -8.12095902e-09, 1, -1.01461458e-16, -1, -8.12095902e-09, 1.24937714e-08)
+floorindown.Rotation = Vector3.new(0, 90, 0)
+floorindown.Size = Vector3.new(24.2, 0.1, 10.2)
+floorindown.TopSurface = Enum.SurfaceType.Smooth
+
+local middle = Instance.new("Part")
+middle.Parent = i
+middle.Name = "middle"
+middle.Anchored = true
+middle.BottomSurface = Enum.SurfaceType.Smooth
+middle.CFrame = CFrame.new(183.649994, 186.650009, -116.800003, 0, -1.32348898e-23, 1, 0, 1, 1.32348898e-23, -1, 0, 0)
+middle.Rotation = Vector3.new(0, 90, 0)
+middle.Size = Vector3.new(27.8, 0.1, 18.7)
+middle.TopSurface = Enum.SurfaceType.Smooth
+
+local downfrommid = Instance.new("Part")
+downfrommid.Parent = i
+downfrommid.Name = "downfrommid"
+downfrommid.Anchored = true
+downfrommid.BottomSurface = Enum.SurfaceType.Smooth
+downfrommid.CFrame = CFrame.new(200.893951, 182.116882, -107.84993, 0.838443995, -0.544988871, 0, -0.54498899, -0.838443756, 2.98023224e-08, -1.24937802e-08, 0, -0.999999881)
+downfrommid.Rotation = Vector3.new(-180, 0, 33)
+downfrommid.Size = Vector3.new(18, 0.1, 14.7)
+downfrommid.TopSurface = Enum.SurfaceType.Smooth
+
+local moredownfrommid = Instance.new("Part")
+moredownfrommid.Parent = i
+moredownfrommid.Name = "moredownfrommid"
+moredownfrommid.Anchored = true
+moredownfrommid.BottomSurface = Enum.SurfaceType.Smooth
+moredownfrommid.CFrame = CFrame.new(198.072723, 174.990952, -123.900002, -1.04753273e-08, 0.544989109, -0.838443279, 2.29933548e-08, -0.838443995, -0.544988573, -1.00000131, 2.98023224e-08, 3.74815912e-09)
+moredownfrommid.Rotation = Vector3.new(90, -57, -90)
+moredownfrommid.Size = Vector3.new(18, 0.1, 14.7)
+moredownfrommid.TopSurface = Enum.SurfaceType.Smooth
+
+local floormidmid = Instance.new("Part")
+floormidmid.Parent = i
+floormidmid.Name = "floormidmid"
+floormidmid.Anchored = true
+floormidmid.BottomSurface = Enum.SurfaceType.Smooth
+floormidmid.CFrame = CFrame.new(209.700012, 178.850052, -114.750015, 7.49629159e-09, 5.96045595e-08, -1, 5.47898011e-08, -1, -5.96045595e-08, -1, -5.47898011e-08, -7.49629603e-09)
+floormidmid.Rotation = Vector3.new(-180, -90, 0)
+floormidmid.Size = Vector3.new(24.3, 0.1, 10.6)
+floormidmid.TopSurface = Enum.SurfaceType.Smooth
+
+local walkwayunder = Instance.new("Part")
+walkwayunder.Parent = i
+walkwayunder.Name = "walkwayunder"
+walkwayunder.Anchored = true
+walkwayunder.BottomSurface = Enum.SurfaceType.Smooth
+walkwayunder.CFrame = CFrame.new(186.800003, 171.050003, -114.450005, -8.8817842e-16, -4.10720559e-16, -1, 0, -1, 4.10720559e-16, -1, 3.64793137e-31, 8.8817842e-16)
+walkwayunder.Rotation = Vector3.new(-180, -90, 0)
+walkwayunder.Size = Vector3.new(27.5, 0.1, 10.6)
+walkwayunder.TopSurface = Enum.SurfaceType.Smooth
+
+local walkwayunderr = Instance.new("Part")
+walkwayunderr.Parent = i
+walkwayunderr.Name = "walkwayunderr"
+walkwayunderr.Anchored = true
+walkwayunderr.BottomSurface = Enum.SurfaceType.Smooth
+walkwayunderr.CFrame = CFrame.new(177.497437, 171.050003, -86.8474045, -0.544638991, 3.23192703e-38, 0.838670731, -2.17817273e-38, -1, 2.43910936e-38, 0.838670731, -4.98336066e-39, 0.544638991)
+walkwayunderr.Rotation = Vector3.new(0, 57, -180)
+walkwayunderr.Size = Vector3.new(38.2, 0.1, 7.9)
+walkwayunderr.TopSurface = Enum.SurfaceType.Smooth
+
+local downstairsguard = Instance.new("Part")
+downstairsguard.Parent = i
+downstairsguard.Name = "Downstairsguard"
+downstairsguard.Anchored = true
+downstairsguard.BottomSurface = Enum.SurfaceType.Smooth
+downstairsguard.CFrame = CFrame.new(160.700012, 171.050003, -70.0500031, 0, 0, 1, 0, -1, 0, 0.99999994, 0, 0)
+downstairsguard.Rotation = Vector3.new(180, 90, 0)
+downstairsguard.Size = Vector3.new(14.5, 0.1, 20.6)
+downstairsguard.TopSurface = Enum.SurfaceType.Smooth
+
+local middlesection = Instance.new("Part")
+middlesection.Parent = i
+middlesection.Name = "Middlesection"
+middlesection.Anchored = true
+middlesection.BottomSurface = Enum.SurfaceType.Smooth
+middlesection.CFrame = CFrame.new(211.449951, 186.649994, -75.2500076, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+middlesection.Rotation = Vector3.new(0, 90, 0)
+middlesection.Size = Vector3.new(56.3, 0.1, 56.9)
+middlesection.TopSurface = Enum.SurfaceType.Smooth
+
+local anotherwalkway = Instance.new("Part")
+anotherwalkway.Parent = i
+anotherwalkway.Name = "anotherwalkway"
+anotherwalkway.Anchored = true
+anotherwalkway.BottomSurface = Enum.SurfaceType.Smooth
+anotherwalkway.CFrame = CFrame.new(180.57724, 171.050003, -67.20121, 0.974370062, 0, -0.224951044, 0, -1, 0, -0.224951044, 0, -0.974370062)
+anotherwalkway.Rotation = Vector3.new(-180, -13, 0)
+anotherwalkway.Size = Vector3.new(5.7, 0.1, 36.3)
+anotherwalkway.TopSurface = Enum.SurfaceType.Smooth
+
+local vault = Instance.new("Part")
+vault.Parent = i
+vault.Name = "vault"
+vault.Anchored = true
+vault.BottomSurface = Enum.SurfaceType.Smooth
+vault.CFrame = CFrame.new(194.650009, 171.547119, -36.9500008, 1, 0, 0, 0, -1, 0, 0, 0, -1)
+vault.Rotation = Vector3.new(-180, 0, 0)
+vault.Size = Vector3.new(41.1, 0.1, 29.5)
+vault.TopSurface = Enum.SurfaceType.Smooth
+
+local uptovan = Instance.new("Part")
+uptovan.Parent = i
+uptovan.Name = "uptovan"
+uptovan.Anchored = true
+uptovan.BottomSurface = Enum.SurfaceType.Smooth
+uptovan.CFrame = CFrame.new(181.100006, 178.157867, -31.6926613, 1, 0, 0, 0, -0.788010955, -0.615661502, 0, 0.615661502, -0.788010955)
+uptovan.Rotation = Vector3.new(142, 0, 0)
+uptovan.Size = Vector3.new(8.4, 0.1, 38.8)
+uptovan.TopSurface = Enum.SurfaceType.Smooth
+
+local uptovan1 = Instance.new("Part")
+uptovan1.Parent = i
+uptovan1.Name = "uptovan1"
+uptovan1.Anchored = true
+uptovan1.BottomSurface = Enum.SurfaceType.Smooth
+uptovan1.CFrame = CFrame.new(182.729828, 189.550034, 10.4590874, 1, 0, 0, 0, -1, -2.98023046e-08, 0, 2.98023046e-08, -1)
+uptovan1.Rotation = Vector3.new(180, 0, 0)
+uptovan1.Size = Vector3.new(8.4, 0.1, 54.2)
+uptovan1.TopSurface = Enum.SurfaceType.Smooth
+
+local towardsvan = Instance.new("Part")
+towardsvan.Parent = i
+towardsvan.Name = "towardsvan"
+towardsvan.Anchored = true
+towardsvan.BottomSurface = Enum.SurfaceType.Smooth
+towardsvan.CFrame = CFrame.new(182.829819, 189.450012, 44.2590981, 1, 0, 0, 0, -1.00000024, 0, 0, 0, -1.00000024)
+towardsvan.Rotation = Vector3.new(-180, 0, 0)
+towardsvan.Size = Vector3.new(8.4, 0.1, 27.4)
+towardsvan.TopSurface = Enum.SurfaceType.Smooth
+
+local van = Instance.new("Part")
+van.Parent = i
+van.Name = "van"
+van.Anchored = true
+van.BottomSurface = Enum.SurfaceType.Smooth
+van.CFrame = CFrame.new(177.959991, 186.170013, 60.1704941, 1, 0, 0, 0, -1, 0, 0, 0, -1)
+van.Rotation = Vector3.new(-180, 0, 0)
+van.Size = Vector3.new(19.5, 0.1, 25.6)
+van.TopSurface = Enum.SurfaceType.Smooth
+
+local transform = Instance.new("Part")
+transform.Parent = i
+transform.Name = "Transform"
+transform.Anchored = true
+transform.BottomSurface = Enum.SurfaceType.Smooth
+transform.CFrame = CFrame.new(231.809799, 186.099991, 84.3000717, 0, -4.23516474e-22, -1, 0, 1, -4.23516474e-22, 1, 0, 0)
+transform.Rotation = Vector3.new(0, -90, 0)
+transform.Size = Vector3.new(4.8, 0.2, 24.2)
+transform.TopSurface = Enum.SurfaceType.Smooth
+	end)
+	
 	local FirstPage = MainUI.AddPage("Teleports")
 	local FirstLabel = FirstPage.AddLabel("Did you think i would add a label here?")
 	local FirstDropdown = FirstPage.AddDropdown("Teleports", {
