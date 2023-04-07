@@ -120,7 +120,7 @@ UICorner.Parent = TextLabel
 
 end)
 	
-	local FirstButton = FirstPage.AddButton("Homemade esp", function()
+	local FirstButton = FirstPage.AddButton("Low-Poly-Map", function()
 		local spawn = Instance.new("Part")
 spawn.Parent = game.Workspace
 spawn.Name = "spawn"
